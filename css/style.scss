@@ -368,7 +368,9 @@ body {
   position: relative;
   top: 0;
   z-index: 0;
+
   .title_1 {
+    @include inner();
     @include padding-top(#E1B8FB);
   }
   .abilities_cover {
@@ -381,10 +383,10 @@ body {
     }
   }
   .title_2 {
+    @include inner();
     @include padding-top(#E1B8FB);
   }
   .contact_cover {
-    @include inner();
     display: flex;
     justify-content: center;
     align-items: center;

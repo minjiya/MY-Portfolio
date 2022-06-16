@@ -477,6 +477,9 @@ body {
 }
 
 .ect_wrapper .title_1 {
+  position: relative;
+  width: 1292px;
+  margin: 0 auto;
   padding-top: 10rem;
   font-size: 3rem;
   font-weight: 700;
@@ -503,6 +506,9 @@ body {
 }
 
 .ect_wrapper .title_2 {
+  position: relative;
+  width: 1292px;
+  margin: 0 auto;
   padding-top: 10rem;
   font-size: 3rem;
   font-weight: 700;
@@ -512,9 +518,6 @@ body {
 }
 
 .ect_wrapper .contact_cover {
-  position: relative;
-  width: 1292px;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
