@@ -9,7 +9,7 @@
     font-size: 50% !important;
   }
   .wrapper_title {
-    visibility: hidden;
+    padding-top: 10rem !important;
   }
   // 상단 고정 NAV 
   .nav_wrapper {
@@ -20,15 +20,162 @@
       margin: 0;
       display: flex;
       justify-content: center;
+      .nav_list {
+        padding: 0
+      }
     }
   }
   // MAIN 
   .main_wrapper {
     .inner {
       @include mobile_inner();
-      border: 1px solid red;
+      height: 90%;
+      .main_title {
+        .title {
+          font-size: 4.5rem;
+        }
+        .name {
+          text-align: center;
+          line-height: 2em;
+          font-size: 3rem;
+          width: 55%;
+          span {
+            font-size: 3rem;
+            line-break: strict;
+          }
+        }
+        .sub {
+          font-size: 1.6rem
+        }
+      }
     }
   }
 
+  // 프로필 화면
+  .profile_wrapper {
+    .part_wrapper {
+      @include mobile_inner();
+      flex-direction: column;
+      gap: 4rem;
+      .part {
+        width: 100%;
+        .profile_img {
+          width: 10%;
+          img {
+            width: 100%;
+            padding: 0;
+          }
+        }
+        .profile_contents {
+          width: 90%;
+          .contents_cover {
+            width: 85%;
+            padding: 3rem 0 3rem 3rem;
+          }
+        }
+      }
+      .part2 {
+        .profile_contents {
+          .contents_cover {
+            width: 80%;
+            padding-left: 5rem;
+          }
+        }
+      }
+    }
+  }
+
+  //WORK
+  .work_wrapper {
+    .works_cover {
+      @include mobile_inner();
+      .works:nth-child(1) {
+        background-image: linear-gradient(rgba(255,255,255, 0.7),rgba(255,255,255, 1)), 
+        url(./../../images/work_1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+      .works:nth-child(2) {
+        background-image: linear-gradient(rgba(255,255,255, 0.8),rgba(255,255,255, 1)), 
+        url(./../../images/work_2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+      .works:nth-child(3) {
+        background-image: linear-gradient(rgba(255,255,255, 0.8),rgba(255,255,255, 1)), 
+        url(./../../images/work_3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+      .works {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2rem;
+        .info {
+          width: 90%;
+          padding: 0;
+          gap: 1rem;
+          .info_cover {
+            .title {
+              text-align: center;
+              font-size: 2rem;
+            }
+            .detail {
+              padding-left: 1.5rem;
+              font-size: 1.6rem;
+            }
+          }
+          .info_btn {
+            justify-content: center;
+          }
+        }
+        .thumnail {
+          display: none;
+        }
+      }
+    }
+    .main_bg {
+      img {
+        bottom: 0;
+      }
+    }
+  }
+
+  //ETC
+  .ect_wrapper {
+    padding-bottom: 15rem;
+    .title_1,
+    .abilities_cover,
+    .title_2,
+    .copyright {
+      @include mobile_inner();
+    }
+    .title_2 {
+      padding-top: 5rem !important;
+    }
+    .abilities_cover {
+      img {
+        width: 90%;
+      }
+    }
+    .copyright {
+      display: none;
+    }
+  }
+
+  // 하단 바로가기 아이콘
+  .shortcut_wrapper {
+    .shortcut {
+      gap: 0rem;
+      img {
+        width: 4.5rem;
+        height: 4.5rem;
+      }
+    }
+  }
 
 }
