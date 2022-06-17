@@ -1,3 +1,6 @@
+@import url("./laptop.scss");
+@import url("./tablet.scss");
+@import url("./mobile.scss");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500&display=swap");
 * {
   list-style: none;
