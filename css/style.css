@@ -2,7 +2,6 @@
 * {
   list-style: none;
   text-decoration: none;
-  color: #707070;
   font-family: 'Roboto', 'Noto Sans KR', sans-serif;
 }
 
@@ -74,6 +73,10 @@ body {
   font-weight: 500;
   letter-spacing: 0.1rem;
   position: relative;
+}
+
+.nav_wrapper .inner .nav_list li a {
+  color: #707070;
 }
 
 .nav_wrapper .inner .nav_list li :hover {
@@ -564,7 +567,7 @@ body {
   text-align: center;
   font-size: 1.4rem;
   font-weight: 500;
-  color: #999;
+  color: #fff;
 }
 
 .ect_wrapper .main_bg {
@@ -626,6 +629,7 @@ body {
 
 .tippy-box[data-theme~='purple'] {
   background-color: #c891eb;
+  color: #fff;
 }
 
 .tippy-box[data-placement^=top] > .tippy-arrow:before {
