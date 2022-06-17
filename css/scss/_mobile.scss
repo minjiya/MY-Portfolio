@@ -1,5 +1,34 @@
-@media (max-width:767px) {
-    body {
-      background-color: lightseagreen;
+@import './common';
+
+@mixin mobile_inner {
+  width: 340px;
+}
+
+@include mobile {
+  html {
+    font-size: 50% !important;
+  }
+  .wrapper_title {
+    visibility: hidden;
+  }
+  // 상단 고정 NAV 
+  .nav_wrapper {
+    height: 10rem;
+    .inner {
+      // @include mobile_inner();
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
     }
   }
+  // MAIN 
+  .main_wrapper {
+    .inner {
+      @include mobile_inner();
+      border: 1px solid red;
+    }
+  }
+
+
+}

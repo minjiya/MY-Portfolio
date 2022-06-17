@@ -1,5 +1,139 @@
-@media (max-width:1023px) {
-    body {
-      background-color: lightsteelblue;
+@import './common';
+
+@mixin tablet_inner {
+  width: 768px;
+}
+
+@include tablet {
+  html {
+    font-size: 55% !important;
+  }
+
+  .wrapper_title {
+    padding-top: 5rem !important;
+  }
+  // 상단 고정 NAV 
+  .nav_wrapper {
+    height: 5rem;
+
+    .inner {
+      justify-content: center;
+      .nav_profile {
+        img {
+          display: none;
+        }
+      }
+      .nav_list {
+        justify-content: center;
+        margin-right: 0;
+      }
     }
+  }
+
+  // 프로필 화면
+  .profile_wrapper {
+    .part_wrapper {
+      @include tablet_inner();
+      .part {
+        .profile_contents {
+          .contents_cover {
+            width: 70%;
+            padding: 3rem;
+            word-break: keep-all;
+          }
+        }
+      }
+      .part1 {
+        .profile_img {
+          img {
+            width: 60%;
+            padding-left: 30%;
+          }
+        }
+      }
+      .part2 {
+        .profile_contents {
+          .contents_cover {
+            padding-left: 4.5rem;
+          }
+        }
+        .profile_img {
+          img {
+            width: 60%;
+            padding-right: 30%;
+          }
+        }
+      }
+    }
+  }
+
+  //WORK
+  .work_wrapper {
+    .works_cover {
+      @include tablet_inner();
+      .works {
+        width: 75rem;
+        .info {
+          width: 50%;
+          .info_cover {
+            .title {
+              font-size: 2rem;
+            }
+            .detail {
+              font-size: 1.2rem;
+            }
+          }
+        }
+        .thumnail {
+          width: 50%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  //ETC
+  .ect_wrapper {
+    .title_1,
+    .abilities_cover,
+    .title_2,
+    .copyright {
+      @include tablet_inner();
+    }
+
+    .abilities_cover {
+      img {
+        width: 60rem;
+      }
+    }
+    .contact_cover {
+      gap: 1rem;
+      flex-direction: column;
+      text-align: center;
+      img {
+        padding-top: 1rem;
+      }
+    }
+    .copyright {
+      align-items: flex-end;
+      span {
+        display: none;
+      }
+    }
+  }
+
+
+  // 하단 바로가기 아이콘
+  .shortcut_wrapper {
+    .shortcut {
+      flex-direction:column-reverse;
+      align-items: flex-end;
+      gap: 0rem;
+      padding: 0 2rem 2rem 0;
+    }
+  }
+
+
 }

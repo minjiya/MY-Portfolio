@@ -1,0 +1,75 @@
+// COMMON - LARGE PC 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500&display=swap');
+
+* {
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+}
+html {
+  font-size: 62.5%;
+  list-style: none;
+  text-decoration: none;
+  color: #707070;
+}
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+
+//믹스인
+@mixin inner {
+  position: relative;
+  width: 1292px;
+  margin: 0 auto;
+  // border:2px solid  greenyellow;
+}
+
+@mixin btn ( $size, $padding ) {
+  display: inline-block;
+  background: linear-gradient(150deg,#d4aeff,#fecef1, #f69df6);
+  border-radius: 4rem;
+    a {
+      display: inline-block;
+      color: #fff;
+      font-weight: 700;
+      font-size: $size;
+      padding: $padding;
+    }
+}
+
+@mixin btn_hover {
+  border-radius: 4rem;
+  background: linear-gradient(50deg,#fecef1, #f6b2f6, #d4aeff);
+  box-shadow: 0 0 0.5rem 0.1rem #f69df685;
+}
+
+@mixin padding-top ($color) {
+  padding-top: 10rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 10rem;
+  text-align: center;
+  color: $color;
+}
+
+//미디어쿼리
+
+@mixin laptop { //MEDIUM PC
+  @media all and (max-width: 1291px){
+    @content;
+  }
+}
+@mixin tablet {
+  @media all and (max-width: 1023px){
+    @content;
+  }
+}
+@mixin mobile {
+  @media all and (max-width: 767px){ 
+    @content;
+  }
+}

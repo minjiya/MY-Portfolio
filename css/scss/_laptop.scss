@@ -1,5 +1,78 @@
-@media (max-width:1292px) {
-  body {
-    background-color: lightcyan;
+@import './common';
+
+@mixin laptop_inner {
+  width: 1024px;
+}
+
+@include laptop {
+
+  // 프로필 화면
+  .profile_wrapper {
+    padding-bottom: 15rem;
+    .part_wrapper {
+      @include laptop_inner();
+      .part {
+        .profile_contents {
+          width: 80%;
+        }
+      }
+    }
   }
+
+  //WORK
+  .work_wrapper {
+    padding-bottom: 15rem;
+    .works_cover {
+      @include laptop_inner();
+      .works {
+        width: 90rem;
+        .info {
+          .info_cover {
+            .title {
+              font-size: 2.4rem;
+            }
+            .detail {
+              font-size: 1.4rem;
+              word-break: keep-all;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //ETC
+  .ect_wrapper {
+    padding-bottom: 1rem;
+    .title_1,
+    .abilities_cover,
+    .title_2,
+    .copyright {
+      @include laptop_inner();
+    }
+
+    .abilities_cover {
+      img {
+        width: 70rem;
+        padding-top: 1rem;
+      }
+    }
+    .title_2 {
+      padding-top: 3rem;
+    }
+    .contact_cover {
+      padding-top: 1rem;
+      gap: 5rem;
+      .profile {
+        img {
+          width: 18rem;
+        }
+      }
+    }
+    .copyright {
+      height: 6rem;
+      padding-top: 10rem;
+    }
+  }
+
 }
