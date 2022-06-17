@@ -261,7 +261,7 @@ body {
   font-weight: 700;
   line-height: 10rem;
   text-align: center;
-  color: #FFDFDF;
+  color: #FFDCF6;
 }
 .work_wrapper .works_cover {
   z-index: 2;
@@ -583,6 +583,7 @@ body {
   .nav_wrapper .inner .nav_list {
     justify-content: center;
     margin-right: 0;
+    padding: 0;
   }
 
   .profile_wrapper .part_wrapper {
