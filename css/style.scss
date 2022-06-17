@@ -363,7 +363,7 @@ body {
 // ect_wrapper
 .ect_wrapper {
   width: 100%;
-  padding-bottom: 20rem;
+  padding-bottom: 1rem;
   background-color: #FCF8FF;
   position: relative;
   top: 0;
@@ -385,6 +385,7 @@ body {
   .title_2 {
     @include inner();
     @include padding-top(#E1B8FB);
+    padding-top: 5rem;
   }
   .contact_cover {
     display: flex;
@@ -407,6 +408,18 @@ body {
       }
     }
   }
+  .copyright {
+    @include inner();
+    display: flex;
+    justify-content: center;
+    padding-top: 20rem;
+    p {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #999;
+    }
+  }
 
   .main_bg {
     width: 100%;
@@ -418,17 +431,6 @@ body {
       position: absolute;
       bottom: 0;
     }
-    .copyright {
-      width: 100%;
-      height: 10rem;
-      text-align: center;
-      font-size: 1.4rem;
-      font-weight: 500;
-      color: #999;
-      bottom: 0;
-      position: absolute;
-    }
-    
   }
 }
 

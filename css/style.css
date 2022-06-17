@@ -469,7 +469,7 @@ body {
 
 .ect_wrapper {
   width: 100%;
-  padding-bottom: 20rem;
+  padding-bottom: 1rem;
   background-color: #FCF8FF;
   position: relative;
   top: 0;
@@ -515,6 +515,7 @@ body {
   line-height: 10rem;
   text-align: center;
   color: #E1B8FB;
+  padding-top: 5rem;
 }
 
 .ect_wrapper .contact_cover {
@@ -546,6 +547,26 @@ body {
   font-size: 1.8rem;
 }
 
+.ect_wrapper .copyright {
+  position: relative;
+  width: 1292px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20rem;
+}
+
+.ect_wrapper .copyright p {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #999;
+}
+
 .ect_wrapper .main_bg {
   width: 100%;
   position: absolute;
@@ -557,17 +578,6 @@ body {
   width: 100%;
   position: absolute;
   bottom: 0;
-}
-
-.ect_wrapper .main_bg .copyright {
-  width: 100%;
-  height: 10rem;
-  text-align: center;
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: #999;
-  bottom: 0;
-  position: absolute;
 }
 
 .shortcut_wrapper {
