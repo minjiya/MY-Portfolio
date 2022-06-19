@@ -1,11 +1,11 @@
 # MY-Portfolio👩
 ### 2022 포트폴리오 사이트 ✌
-🔹 반응형 제작 : PC(large), Laptop(medium), Tablet, Mobile
+반응형 제작 : PC(large), Laptop(medium), Tablet, Mobile
 <br/>
 
 ### ✔작업 내용
-🔹 개인 작업<br/>
-🔹 기획, 디자인, 퍼블리싱 100%
+개인 작업<br/>
+기획, 디자인, 퍼블리싱 100%
 -   작업 년도 : 2022.06
 -   작업 기간 : 4일
 -   사용 스킬 : <img src="https://img.shields.io/badge/HTML5-red?style=flat-square&logo=HTML5&logoColor=white"/> <img src="https://img.shields.io/badge/Sass-c93691?style=flat-square&logo=Sass&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-yellow?style=flat-square&logo=JavaScript&logoColor=white"/>
