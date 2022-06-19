@@ -90,21 +90,21 @@
     .works_cover {
       @include mobile_inner();
       .works:nth-child(1) {
-        background-image: linear-gradient(rgba(255,255,255, 0.7),rgba(255,255,255, 1)), 
+        background-image: linear-gradient(rgba(255,255,255, 0.8),rgba(255,255,255, 1)), 
         url(./../../images/work_1.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
       }
       .works:nth-child(2) {
-        background-image: linear-gradient(rgba(255,255,255, 0.8),rgba(255,255,255, 1)), 
+        background-image: linear-gradient(rgba(255,255,255, 0.9),rgba(255,255,255, 1)), 
         url(./../../images/work_2.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
       }
       .works:nth-child(3) {
-        background-image: linear-gradient(rgba(255,255,255, 0.8),rgba(255,255,255, 1)), 
+        background-image: linear-gradient(rgba(255,255,255, 0.9),rgba(255,255,255, 1)), 
         url(./../../images/work_3.png);
         background-repeat: no-repeat;
         background-size: contain;

@@ -16,3 +16,18 @@ document.querySelector('.copy').addEventListener("click", function() {
   document.execCommand(".copy");
   document.body.removeChild(tempElem);
 });
+
+//스크롤하면 나타나는 이벤트
+const controller = new ScrollMagic.Controller();
+
+const revealElements = document.querySelectorAll('.s-event');
+revealElements.forEach(function (revealElement) {
+    new ScrollMagic
+    .Scene ({
+        triggerElement: revealElement,
+        offset: 50,	
+        triggerHook: .9
+    })
+    .setClassToggle(revealElement, "visible") 
+    .addTo(controller);
+})

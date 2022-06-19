@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500&display=swap");
@@ -226,9 +227,29 @@ body {
 }
 .profile_wrapper .part_wrapper .part1 .contents_cover {
   border-radius: 0 5rem 5rem 5rem;
+  /* 스크롤매직 */
+}
+.profile_wrapper .part_wrapper .part1 .contents_cover.s-event {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: 1s;
+}
+.profile_wrapper .part_wrapper .part1 .contents_cover.s-event.visible {
+  opacity: 1;
+  transform: none;
 }
 .profile_wrapper .part_wrapper .part2 .contents_cover {
   border-radius: 5rem 0 5rem 5rem;
+  /* 스크롤매직 */
+}
+.profile_wrapper .part_wrapper .part2 .contents_cover.s-event {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: 1s;
+}
+.profile_wrapper .part_wrapper .part2 .contents_cover.s-event.visible {
+  opacity: 1;
+  transform: none;
 }
 .profile_wrapper .part_wrapper .part2 .contents_cover .date {
   line-height: 3rem;
@@ -279,6 +300,16 @@ body {
   border-radius: 3rem;
   background-color: #fff;
   box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16);
+  /* 스크롤매직 */
+}
+.work_wrapper .works_cover .works.s-event {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.6s;
+}
+.work_wrapper .works_cover .works.s-event.visible {
+  opacity: 1;
+  transform: none;
 }
 .work_wrapper .works_cover .works .info {
   width: 40%;
@@ -466,6 +497,7 @@ body {
   border-top-color: #c891eb;
 }
 
+/* 스크롤매직 */
 * {
   list-style: none;
   text-decoration: none;
@@ -753,19 +785,19 @@ body {
     width: 340px;
   }
   .work_wrapper .works_cover .works:nth-child(1) {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgb(255, 255, 255)), url(./../../images/work_1.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgb(255, 255, 255)), url(./../../images/work_1.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
   }
   .work_wrapper .works_cover .works:nth-child(2) {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgb(255, 255, 255)), url(./../../images/work_2.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgb(255, 255, 255)), url(./../../images/work_2.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
   }
   .work_wrapper .works_cover .works:nth-child(3) {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgb(255, 255, 255)), url(./../../images/work_3.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgb(255, 255, 255)), url(./../../images/work_3.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

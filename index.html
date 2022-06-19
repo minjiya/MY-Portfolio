@@ -5,13 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="./css/css/style.css">
+
   <!-- tippy 툴팁  -->
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="https://unpkg.com/tippy.js@6"></script>
+  <!-- 스크롤 매직  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script defer src="./js/main.js"></script>
 
-  <link rel="stylesheet" href="./css/css/style.css">
 </head>
 
 <body>
@@ -31,8 +34,9 @@
     </div>
   </nav>
 
+  <div id="fullpage">
   <!-- 메인화면 -->
-  <section id="Main" class="box main_wrapper">
+  <section id="Main" class="box main_wrapper section">
     <div class="inner">
       <div class="main_title">
         <p class="title">PORTFOLIO</p>
@@ -48,7 +52,7 @@
   </section>
 
   <!-- 프로필 화면 -->
-  <section id="Profile" class="box profile_wrapper">
+  <section id="Profile" class="box profile_wrapper section">
     <div class="wrapper_title">PROFILE</div>
     <section class="part_wrapper">
       <div class="part part1">
@@ -58,7 +62,7 @@
         </div>
 
         <div class="profile_contents">
-          <div class="contents_cover">
+          <div class="contents_cover s-event">
             <div class="cover_title">이력사항</div>
             <div class="content">
               <p class="date">2021.11~2022.05 더에이치알더</p>
@@ -72,7 +76,7 @@
             </div>
           </div>
 
-          <div class="contents_cover">
+          <div class="contents_cover s-event">
             <div class="cover_title">학력사항</div>
             <div class="content">
               <p class="date">2019.02 강남대학교 경영학전공 졸업</p>
@@ -80,7 +84,7 @@
             </div>
           </div>
           
-          <div class="contents_cover">
+          <div class="contents_cover s-event">
             <div class="cover_title">자격사항</div>
             <div class="content">
               <p class="date">2021.09 GTQ포토샵 1급</p>
@@ -95,7 +99,7 @@
 
       <div class="part part2">
         <div class="profile_contents">
-          <div class="contents_cover">
+          <div class="contents_cover s-event">
             <div class="cover_title">활동사항</div>
             <div class="content">
               <p class="date">2021.06~2021.10<br>모바일 웹&앱디자인 교육 이수</p>
@@ -136,12 +140,12 @@
   </section>
 
   <!-- 작업물 -->
-  <section id="Work" class="box work_wrapper">
+  <section id="Work" class="box work_wrapper section">
 
     <div class="wrapper_title">WORK</div>
     <div class="works_cover">
 
-      <div class="works">
+      <div class="works s-event">
         <div class="info">
           <div class="info_cover">
             <p class="title">천재교육 초등 앱 '하루 하나'</p>
@@ -160,7 +164,7 @@
         </div>
       </div>  
 
-      <div class="works">
+      <div class="works s-event">
         <div class="info">
           <div class="info_cover">
             <p class="title">원목 가구 웹사이트 제작</p>
@@ -180,7 +184,7 @@
         </div>
       </div>  
       
-      <div class="works">
+      <div class="works s-event">
         <div class="info">
           <div class="info_cover">
             <p class="title">패스트푸드 프랜차이즈 반응형 웹</p>
@@ -209,7 +213,7 @@
   </section>
 
   <!-- 개인정보 및 스킬 -->
-  <section id="Etc" class="box ect_wrapper">
+  <section id="Etc" class="box ect_wrapper section">
 
     <div class="wrapper_title title_1">ABILITY</div>
     <div class="abilities_cover">
@@ -238,7 +242,7 @@
     </div>
 
   </section>
-
+  </div>
 
   
   <div class="shortcut_wrapper">
@@ -252,6 +256,7 @@
         </div>
       </div>    
   </div>
+
 
 </body>
 

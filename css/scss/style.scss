@@ -194,11 +194,31 @@
     .part1 {
       .contents_cover {
         border-radius: 0 5rem 5rem 5rem;
+        /* 스크롤매직 */
+        &.s-event {
+          opacity: 0;
+          transform: translateX(-20px);
+          transition: 1s;
+            &.visible {
+              opacity: 1;
+              transform: none;
+            }
+        }
       }
     }
     .part2 {
       .contents_cover {
         border-radius: 5rem 0 5rem 5rem;
+        /* 스크롤매직 */
+        &.s-event {
+          opacity: 0;
+          transform: translateX(20px);
+          transition: 1s;
+            &.visible {
+              opacity: 1;
+              transform: none;
+            }
+        }
         .date {
           line-height: 3rem;
         }
@@ -244,6 +264,16 @@
       border-radius: 3rem;
       background-color: #fff;
       box-shadow: 0 0.3rem 0.6rem rgba(0,0,0,0.16);
+      /* 스크롤매직 */
+      &.s-event {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: .6s;
+          &.visible {
+            opacity: 1;
+            transform: none;
+          }
+      }
       .info {
         width: 40%;
         display: flex;
@@ -419,6 +449,16 @@
   }
 }
 
+/* 스크롤매직 */
+// .s-event {
+//     opacity: 0;
+//     transform: translateX(-20px);
+//     transition: 1s;
+// }
+// .s-event.visible {
+//     opacity: 1;
+//     transform: none;
+// }
 
 
 @import './laptop';
